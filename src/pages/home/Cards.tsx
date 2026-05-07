@@ -4,6 +4,7 @@ import { MdOutlineDeveloperMode } from "react-icons/md";
 import { CardProp } from "../../components"
 import { TfiWorld } from "react-icons/tfi";
 import { SiCssdesignawards } from "react-icons/si";
+import web from "../../assets/img/webcard.jpg"
 
 const Cards = () => {
   return (
@@ -13,7 +14,7 @@ const Cards = () => {
 
       <div className="p-6 px-20 gap-5 flex flex-wrap justify-between items-center">
         <CardProp
-          logo={<TfiWorld />}
+          logo={<img src={web}></img>}
           title="Web Development"
           details="We build website or web apps for blogs, business, schools, churches, organizations etc."
           // button="Learn More"
@@ -21,7 +22,7 @@ const Cards = () => {
 
         <CardProp
           logo={<MdOutlineDeveloperMode />}
-          title="Mobile Development"
+          title="Mobile App Development"
           details="We build Mobile apps for blogs, business, schools, churches, organizations etc."
           // button="Learn More"
         />
@@ -37,7 +38,7 @@ const Cards = () => {
 
         <CardProp
           logo={<TfiWorld />}
-          title="Web Development"
+          title="Destop App Development"
           details="We build website or web apps for blogs, business, schools, churches, organizations etc."
           // button="Learn More"
         />
