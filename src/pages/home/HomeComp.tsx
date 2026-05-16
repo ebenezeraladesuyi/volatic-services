@@ -8,6 +8,7 @@ const HomeComp = () => {
     <div>
         <Hero />
         <Cards />
+        
       
     </div>
   )
