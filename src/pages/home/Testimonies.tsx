@@ -23,10 +23,10 @@ const Testimonies = () => {
        <p className="pt-3">“The professionalism and creativity from Volatic were exceptional. They paid attention to every detail and delivered exactly what we wanted.</p>
       </div>
 
-      <div className="bg-blue-300 p-6 rounded-4xl  text-white">
+      <div className="bg-blue-300 p-6 rounded-4xl  text-white rotate-2">
        <img src={img1} alt="" width={150} className="rounded-4xl"/>
        {/* <h2 className="text-xl text-center font-bold ">Olofinte Joseph</h2> */}
-       <p className="pt-2">"Working with volatic was smooth from start to finish. They listened to our ideas, added creative direction, and built a website that increased both our traffic and customer engagement."</p>
+       <p className="pt-2">"Working with volatic was smooth from start to finish. They listened to our ideas, added creative direction, and built a website that increased both our traffic and customer engagement"</p>
       </div>
 
       <div className="bg-white p-6 rounded-4xl text-w ">
@@ -43,15 +43,16 @@ const Testimonies = () => {
        <p className="pt-3">“Volatic delivered a stunning website that not only looks amazing but also performs excellently across all devices. We’ve already seen an increase in customer engagement.”</p>
       </div>
 
-      <div className="bg-blue-300 p-6 rounded-4xl text-white">
+      <div className="bg-blue-300 p-6 rounded-4xl text-white rotate-2">
        <img src={img} alt="" width={80} className="rounded-4xl"/>
        {/* <h2>Olofinte Joseph</h2> */}
        <p className="pt-3">“From the first consultation to the final launch, Volatic showed incredible professionalism and creativity. Our new website now feels modern, fast, and user-friendly.”</p>
       </div>
 
       <div className="bg-white p-6 rounded-4xl  animate-scroll">
+        <div className="flex">
        <img src={img3} alt="" width={80}  className="rounded-4xl justify-end"/>
-       <h3>MyHealthSureNG</h3>
+       <h3 className="pt-15 font-bold text-blue-950">MyHealthSureNG</h3></div>
        {/* <h2 className="text-taupe-950">Olofinte Joseph</h2> */}
        <p className="pt-3">“Choosing Volatic was one of the best decisions for our company. Their design quality and customer support were outstanding.”</p>
       </div>
