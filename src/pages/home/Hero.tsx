@@ -12,8 +12,8 @@ const Hero = () => {
             <img src={her} alt="" className=" w-137.5" />
           </div>
           <div className="flex  justify-center flex-col px-17.5 gap-3.75  min-w-32.5 min-h-screen ">
-            <h1 className=" text- text-[40px] w-97.5 font-semibold text-white   ">
-              Smart Technology Services for a{" "}
+            <h1 className=" text- text-[45px] w-99.5 font-bold  text-white   ">
+              Smart Technology Services for a
               <span>
                 <Typewriter
                   options={{ loop: true }}
@@ -23,7 +23,7 @@ const Hero = () => {
                       .pauseFor(1500)
                       .deleteAll()
 
-                      .typeString("Advance Future")
+                      .typeString("Advance Future!")
                       .pauseFor(1500)
                       .deleteAll()
                       .start();
