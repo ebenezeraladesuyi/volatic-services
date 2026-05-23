@@ -8,10 +8,10 @@ const About = () => {
   return (
     <div>
     <div className="font-extrabold w-full min-h-0.7 bg-black text-white py-20">
-      <h1 className="text-[60px] flex justify-center">
+      <h1 className="text-[60px] text-center">
         About Us
       </h1>
-      <h3 className="flex justify-center font-light py-7"> 
+      <h3 className="text-center font-light py-7"> 
         Volatic is a forward-thinking digital solutions company committed to helping <br/>individuals,
          brands, and businesses thrive in today’s technology-driven world. Through <br/>creativity, 
          innovation, and strategic thinking, we deliver impactful digital experiences<br/> that solve real
@@ -24,7 +24,7 @@ const About = () => {
     <div className="flex justify-center gap-20">
 
     <div>
-      <h1 className=" flex justify-center pt-20 text-[40px] font-bold text-[#00AFEF]"> 
+      <h1 className=" text-center pt-20 text-[40px] font-bold text-[#00AFEF]"> 
         Our Vision </h1>
         <h3 className="flex justify-center pt-3">Our vision is to build a future where businesses of all sizes can leverage<br/>
          technology to unlock their full potential. Through innovation, creativity, <br/>
@@ -32,7 +32,7 @@ const About = () => {
          in driving sustainable growth, We aim to be recognized <br/> for delivering solutions that inspire progress,
          efficiency, and long-term <br/>success.</h3>
 
-          <h1 className=" flex justify-center pt-5 text-[40px] font-bold text-[#00AFEF]"> 
+          <h1 className=" text-center pt-5 text-[40px] font-bold text-[#00AFEF]"> 
         Our Mision </h1>
         <h3 className="flex justify-center pt-3">Our mission is to help businesses and organizations thrive
            in the digital<br/>
