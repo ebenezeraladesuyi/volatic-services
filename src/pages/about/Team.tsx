@@ -2,8 +2,9 @@
 
 const Team = () => {
   return (
-    <div>
-      TEAM
+    <div className="pt-20">
+      <h1 className="text-4xl font-extrabold flex justify-center">Get to Know Our Core Team</h1>
+      
     </div>
   )
 }
