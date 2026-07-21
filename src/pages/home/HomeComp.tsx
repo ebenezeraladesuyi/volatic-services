@@ -4,6 +4,7 @@
 import Cards from "./Cards"
 // import Carousel from "./Carousel"
 import Hero from "./Hero"
+import WorkDone from "./WorkDone"
 import Testimonies from "./Testimonies"
 
 const HomeComp = () => {
@@ -11,6 +12,8 @@ const HomeComp = () => {
     <div>
         <Hero />
         <Cards />
+        <WorkDone/>
+        
         <Testimonies />
         {/* <Carousel /> */}
       

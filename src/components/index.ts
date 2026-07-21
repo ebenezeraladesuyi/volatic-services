@@ -1,2 +1,2 @@
-export * from "./block"
-export * from "./static"
+export * from "./block";
+export * from "./static";

@@ -9,12 +9,19 @@ const Header = () => {
       <img src={logo} className="w-16 " alt="" />
 
       <div className="flex items-center gap-5">
-        <NavLink to="/about" className="p-2 bg-black text-white rounded">
-            <button>About</button>
+
+
+        <NavLink to="/" className="p-2 font-extrabold text-[19px] flex justify-center items-center text-[#3e4094] hover:text-[#e660eb] ">
+            <button>Home</button>
         </NavLink>
 
 
-        <NavLink to="/contact" className="p-2 bg-black text-white rounded ">
+
+        <NavLink to="/about" className="p-2 font-extrabold text-[19px] flex justify-center items-center text-[#3e4094] hover:text-[#e660eb] ">
+            <button>About</button>
+        </NavLink>
+
+        <NavLink to="/contact" className="p-2 bg-[#e660eb] w-[120px] text-[#f3f3f8] font-bold rounded-4xl flex justify-center items-center ">
             <button>Contact</button>
         </NavLink>
         </div>
