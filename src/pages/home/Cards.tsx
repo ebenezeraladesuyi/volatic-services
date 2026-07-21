@@ -1,15 +1,10 @@
-// import React from 'react'
+
 
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { CardProp } from "../../components";
 import { TfiWorld } from "react-icons/tfi";
 import { SiCssdesignawards } from "react-icons/si";
-import bg1 from "../../assets/desktop.jpg";
-import bg2 from "../../assets/mobileapp.jpg";
-import bg3 from "../../assets/ui-ux.jpg";
-
-import bg4 from "../../assets/webcard.jpg";
-import { TbDeviceDesktopCode } from "react-icons/tb";
+import web from "../../assets/img/webcard.jpg"
 
 const Cards = () => {
   return (
@@ -18,19 +13,16 @@ const Cards = () => {
 
       <div className="p-6 px-15 gap-6 py-20 flex  justify-between items-center ">
         <CardProp
-          logo={<TbDeviceDesktopCode />
-}
-          bg={bg1}
-          title="Desktop Apps Development"
-          details="We build reliable desktop applications improving productivity, streamlining workflows, and delivering smooth cross-platform performance."
+          logo={<img src={web}></img>}
+          title="Web Development"
+          details="We build website or web apps for blogs, business, schools, churches, organizations etc."
           // button="Learn More"
         />
 
         <CardProp
           logo={<MdOutlineDeveloperMode />}
-          bg={bg2}
-          title="Mobile Apps Development"
-          details="We build modern mobile apps with seamless experiences, optimized performance, and secure functionality everywhere."
+          title="Mobile App Development"
+          details="We build Mobile apps for blogs, business, schools, churches, organizations etc."
           // button="Learn More"
         />
 
@@ -44,9 +36,8 @@ const Cards = () => {
 
         <CardProp
           logo={<TfiWorld />}
-          bg={bg4}
-          title="Web Development"
-          details="We develop tailored web applications enhancing productivity, simplifying business processes, and supporting long-term business growth."
+          title="Destop App Development"
+          details="We build website or web apps for blogs, business, schools, churches, organizations etc."
           // button="Learn More"
         />
       </div>

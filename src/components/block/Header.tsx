@@ -5,8 +5,8 @@ import logo from "../../assets/vol-logo.png"
 
 const Header = () => {
   return (
-    <div className="px-10 py-2 flex justify-between bg-transparent fixed z-40  w-full">
-      <img src={logo} className="w-12 rounded-[10px] " alt="" />
+    <div className="px-10 py-2 flex justify-between">
+      <img src={logo} className="w-16 " alt="" />
 
       <div className="flex items-center gap-5">
 
