@@ -1,13 +1,15 @@
 // import React from 'react'
 
 import { Outlet } from "react-router-dom"
-import { Footer } from "../components"
+import { Footer, Header } from "../components"
+import ScrollToTop from "../components/static/ScrollToTop"
 // import { Footer, Header } from "../components"
 
 const HomeLayout = () => {
   return (
     <div>
-        {/* <Header /> */}
+      <ScrollToTop />
+        <Header />
 
         <Outlet />
 

@@ -1,12 +1,18 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomeLayout from "../layout/HomeLayout";
-import HomeComp from "../pages/home/HomeComp";
 import ContactLayout from "../layout/ContactLayout";
-import Contact from "../pages/contact/Contact";
 import AboutLayout from "../layout/AboutLayout";
-import About from "../pages/about/About";
-import Team from "../pages/about/Team";
+import ServicesLayout from "../layout/ServicesLayout";
+import { lazy } from "react";
+import CareersLayout from "../layout/CareersLayout";
+// import Team from "../pages/about/Team";
 
+
+const HomeComp = lazy(()=> import("../pages/home/HomeComp"));
+const Contact = lazy(()=> import("../pages/contact/Contact"));
+const About = lazy(()=> import("../pages/about/About"));
+const Services = lazy(()=> import("../pages/services/Servces"));
+const Careers = lazy(()=> import("../pages/careers/Careers"));
 
 
 export const element = createBrowserRouter([
@@ -38,9 +44,29 @@ export const element = createBrowserRouter([
                 index: true,
                 element: <About />
             },
+            // {
+            //     path: "team",
+            //     element: <Team />
+            // }
+        ]
+    },
+    {
+        path: "/services",
+        element: <ServicesLayout />,
+        children: [
             {
-                path: "team",
-                element: <Team />
+                index: true,
+                element: <Services />
+            }
+        ]
+    },
+    {
+        path: "/careers",
+        element: <CareersLayout />,
+        children: [
+            {
+                index: true,
+                element: <Careers />
             }
         ]
     },

@@ -28,7 +28,7 @@ const Cards = () => {
 
         <CardProp
           logo={<SiCssdesignawards />}
-          bg={bg3}
+          // bg={bg3}
           title="Product Design"
           details="We craft high-quality product experiences connecting brands with audiences through intuitive, impactful digital solutions."
           // button="Learn More"
@@ -36,7 +36,7 @@ const Cards = () => {
 
         <CardProp
           logo={<TfiWorld />}
-          title="Destop App Development"
+          title="Desktop App Development"
           details="We build website or web apps for blogs, business, schools, churches, organizations etc."
           // button="Learn More"
         />

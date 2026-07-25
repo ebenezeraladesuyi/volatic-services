@@ -2,10 +2,12 @@
 
 import { Outlet } from "react-router-dom"
 import { Footer, Header } from "../components"
+import ScrollToTop from "../components/static/ScrollToTop"
 
 const ContactLayout = () => {
   return (
     <div>
+      <ScrollToTop />
         <Header />
 
         <Outlet />

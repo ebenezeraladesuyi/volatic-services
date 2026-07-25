@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom"
 import { Footer, Header } from "../components"
 import ScrollToTop from "../components/static/ScrollToTop"
 
-const AboutLayout = () => {
+const ServicesLayout = () => {
   return (
     <div>
       <ScrollToTop />
@@ -18,4 +18,4 @@ const AboutLayout = () => {
   )
 }
 
-export default AboutLayout
+export default ServicesLayout

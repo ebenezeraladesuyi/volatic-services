@@ -1,61 +1,190 @@
-import  logo from  "../../assets/vola2-D73dZL37-removebg-preview.png"
+import { 
+          // FaFacebook, 
+          FaTwitter, 
+          // FaInstagram, 
+          FaLinkedin, 
+          // FaYoutube 
+        } from "react-icons/fa";
+import { MdPhone, MdEmail } from "react-icons/md";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/vol-logo.png";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const quickLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Careers", path: "/career" },
+    { name: "Contact", path: "/contact" },
+  ];
+
+  const socialLinks = [
+    // { icon: FaFacebook, href: "#", label: "Facebook" },
+    { icon: FaTwitter, href: "#", label: "Twitter" },
+    // { icon: FaInstagram, href: "#", label: "Instagram" },
+    { icon: FaLinkedin, href: "#", label: "LinkedIn" },
+    // { icon: FaYoutube, href: "#", label: "YouTube" },
+  ];
+
   return (
-    <div className="bg-[#cfedf8]">
-    <div className=" flex  gap-6   p-15">
-      
-      <div>
-      <img src={logo} alt="" width={150}/>
-      <h1 className="max-w-3xl pt-4">We are a trusted technology and printing company delivering innovative solutions to clients both locally and internationally. With a strong blend of professionalism, creativity, and proven expertise, we are committed to delivering exceptional results that exceed expectations.</h1>
-<div className="pt-2.5">
-     <h1>Phone:</h1> <span>+234 (0) 703 675 0857</span>
-     <h1>Address:</h1> <span>3, Nova Road 3, Adebayo, Ado-Ekiti, Ekiti State</span>
-     <h1>Email:</h1> <span>volaticacademy@gmail.com</span>
-     </div>
-     </div>
+    <footer className="bg-[#0a0e1a]">
+      {/* Main Footer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          
+          {/* Company Info */}
+          <div className="lg:col-span-1">
+            <NavLink to="/" className="inline-block hover:opacity-80 transition-opacity">
+              <img 
+                src={logo} 
+                alt="Volatic Services" 
+                className="h-20 w-auto object-contain bg-white rounded-lg"
+              />
+            </NavLink>
+            <p className="mt-4 text-gray-400 text-sm leading-relaxed">
+              We are a trusted technology company delivering innovative 
+              solutions to clients both locally and internationally. With a strong 
+              blend of professionalism, creativity, and proven expertise.
+            </p>
+            
+            {/* Social Icons */}
+            <div className="flex gap-3 mt-6">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="p-2 bg-white/5 hover:bg-[#e660eb] text-gray-400 hover:text-white 
+                           rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg 
+                           hover:shadow-[#e660eb]/20 border border-white/10"
+                >
+                  <social.icon className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
+          </div>
 
-     <div className="mt-15 gap-8 ">
-      <h1>Working Hours</h1>
-       <hr className="  border-[2px] w-[80px]"/>
-    <div className="flex gap-14 mt-10">
-      <h2 className="">Monday</h2>
-      <p>9:00am - 5:00pm</p>
-</div>
-  <hr className="  border-[1px] w-[280px]"/>
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-white font-bold text-lg mb-4 relative inline-block">
+              Quick Links
+              <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-[#e660eb]"></span>
+            </h3>
+            <ul className="space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <NavLink
+                    to={link.path}
+                    className="text-gray-400 hover:text-[#e660eb] transition-colors duration-200 
+                             text-sm flex items-center gap-2 group"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#e660eb] rounded-full opacity-0 group-hover:opacity-100 
+                                   transition-opacity duration-200"></span>
+                    {link.name}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-<div className="flex gap-14 mt-4">
-      <h2>Tuesday</h2>
-      <p>9:00am - 5:00pm</p>
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-white font-bold text-lg mb-4 relative inline-block">
+              Contact Us
+              <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-[#e660eb]"></span>
+            </h3>
+            <ul className="space-y-4">
+              <li className="flex items-center gap-3 text-sm text-gray-400">
+                <MdPhone className="text-[#e660eb] text-xl shrink-0" />
+                <a href="tel:+2347036750857" className="hover:text-[#e660eb] transition-colors">
+                  +234 (0) 703 675 0857
+                </a>
+              </li>
+              <li className="flex items-center gap-3 text-sm text-gray-400">
+                <MdEmail className="text-[#e660eb] text-xl shrink-0" />
+                <a href="mailto:info@volaticservices.com.ng" className="hover:text-[#e660eb] transition-colors">
+                  info@volaticservices.com.ng
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services Overview */}
+          <div>
+            <h3 className="text-white font-bold text-lg mb-4 relative inline-block">
+              Our Services
+              <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-[#e660eb]"></span>
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <NavLink
+                  to="/services"
+                  className="text-gray-400 hover:text-[#e660eb] transition-colors duration-200 
+                           text-sm flex items-center gap-2 group"
+                >
+                  <span className="w-1.5 h-1.5 bg-[#e660eb] rounded-full opacity-0 group-hover:opacity-100 
+                                 transition-opacity duration-200"></span>
+                  Software Development
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  className="text-gray-400 hover:text-[#e660eb] transition-colors duration-200 
+                           text-sm flex items-center gap-2 group"
+                >
+                  <span className="w-1.5 h-1.5 bg-[#e660eb] rounded-full opacity-0 group-hover:opacity-100 
+                                 transition-opacity duration-200"></span>
+                  UI/UX Design
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  className="text-gray-400 hover:text-[#e660eb] transition-colors duration-200 
+                           text-sm flex items-center gap-2 group"
+                >
+                  <span className="w-1.5 h-1.5 bg-[#e660eb] rounded-full opacity-0 group-hover:opacity-100 
+                                 transition-opacity duration-200"></span>
+                  Cloud & Infrastructure
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  className="text-gray-400 hover:text-[#e660eb] transition-colors duration-200 
+                           text-sm flex items-center gap-2 group"
+                >
+                  <span className="w-1.5 h-1.5 bg-[#e660eb] rounded-full opacity-0 group-hover:opacity-100 
+                                 transition-opacity duration-200"></span>
+                  Security & Compliance
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <hr className="  border-[1px] w-[280px]"/>
 
-<div className="flex gap-14 mt-4">
-      <h2>Wednesday</h2>
-      <p>9:00am - 5:00pm</p>
+      {/* Bottom Bar */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
+            <p className="text-sm text-gray-400 text-center sm:text-left">
+              &copy; {currentYear} <span className="font-semibold text-white">Volatic Services</span>. 
+              All Rights Reserved.
+            </p>
+            <div className="flex gap-6 text-xs text-gray-400">
+              <a href="#" className="hover:text-[#e660eb] transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-[#e660eb] transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-[#e660eb] transition-colors">Cookies</a>
+            </div>
+          </div>
+        </div>
       </div>
-    <hr className="  border-[1px] w-[280px]"/>
+    </footer>
+  );
+};
 
-<div className=" flex gap-14 mt-4">
-      <h2>Thursday</h2>
-      <p>9:00am - 5:00pm</p>
-      </div>
-       <hr className="  border-[1px] w-[280px]"/>
-
-      <div className="flex gap-14 mt-4">
-      <h2>Friday</h2>
-      <p>9:00am - 5:00pm</p>
-      </div>
-   <hr className="  border-[1px] w-[280px]"/>
-      </div>
-     
-     </div>
-      <div>
- <p className="text-center">Copyright © 2026 volatic services All Right Reserved.</p>
-  </div>
-     </div>
-  
-  )
-}
-
-export default Footer
+export default Footer;
