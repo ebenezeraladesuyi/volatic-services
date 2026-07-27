@@ -223,7 +223,7 @@ const Hero = () => {
 
                 {/* Floating Labels */}
                 <div className="absolute top-4 left-4 bg-white shadow-lg rounded-lg px-4 py-2 border border-[#3e4094]/10">
-                  <span className="text-xs font-semibold text-[#3e4094]">💻 Full-Stack</span>
+                  <span className="text-xs font-semibold text-[#3e4094]">💻 Software</span>
                 </div>
                 <div className="absolute top-4 right-4 bg-white shadow-lg rounded-lg px-4 py-2 border border-[#3e4094]/10">
                   <span className="text-xs font-semibold text-[#3e4094]">🎨 Design</span>
