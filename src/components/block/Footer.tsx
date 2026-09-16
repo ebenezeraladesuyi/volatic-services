@@ -1,8 +1,9 @@
 import { 
           // FaFacebook, 
-          FaTwitter, 
+          // FaTwitter, 
           // FaInstagram, 
-          FaLinkedin, 
+          FaLinkedin,
+          FaFacebook, 
           // FaYoutube 
         } from "react-icons/fa";
 import { MdPhone, MdEmail } from "react-icons/md";
@@ -22,9 +23,9 @@ const Footer = () => {
 
   const socialLinks = [
     // { icon: FaFacebook, href: "#", label: "Facebook" },
-    { icon: FaTwitter, href: "#", label: "Twitter" },
+    { icon: FaFacebook, href: "https://web.facebook.com/people/Volatic-Services/61594046357355/", label: "Facebook" },
     // { icon: FaInstagram, href: "#", label: "Instagram" },
-    { icon: FaLinkedin, href: "#", label: "LinkedIn" },
+    { icon: FaLinkedin, href: "https://www.linkedin.com/company/volatic-services", label: "LinkedIn" },
     // { icon: FaYoutube, href: "#", label: "YouTube" },
   ];
 
